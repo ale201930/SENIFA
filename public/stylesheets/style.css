@@ -18,6 +18,80 @@ html {
 }
 
 /* ********************************** */
+/*             TABLA                  */
+/* ********************************** */
+
+main{
+    padding-top: 6rem;
+  }
+
+.contenedor {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.3;
+  }
+
+
+.content-table { 
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+  margin-bottom: 100px;
+	border-collapse: collapse; 
+	font-size: 1em; 
+	font-family: sans-serif; 
+	min-width: 600px; 
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 
+  }
+
+  .content-table thead tr { 
+	background-color: rgb(41, 159, 255); 
+	color: #ffffff; 
+	text-align: middle; 
+  }
+
+  .content-table th, .content-table td { 
+	padding: 12px 15px; text-align: center;
+  }
+
+  .content-table tbody tr { 
+	border-bottom: 1px solid #dddddd; text-align: center;
+  } 
+  .content-table tbody tr:nth-of-type(even) { 
+	background-color: #f3f3f3; text-align: center;
+  } 
+  .content-table tbody tr:last-of-type { 
+	border-bottom: 2px solid #3251ff; 
+  }
+
+p{
+  padding: 5px;
+}
+
+.buton{
+    background: rgb(41, 159, 255);
+    text-decoration: none;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    color:  #ffffff;
+    font-weight: 700;
+  }
+  .buton:hover{
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #3251ff;
+    color: #a0a0a0;
+  }
+  
+
+
+/* ********************************** */
 /*             LOGIN                  */
 /* ********************************** */
 

@@ -1,11 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <h1>Si agarro</h1>
+  <header>
+    <div class="container-hero">
+      <div class="container hero">
+        <div class="customer-support">
+          <i class="fa-solid fa-headset"></i>
+          <div class="content-customer-support">
+            <span class="text">Soporte al cliente</span>
+            <span class="number">0414-2204369</span>
+          </div>
+        </div>
+
+        <div class="container-logo">
+          
+          <h1 class="logo"><a href="/">SENIFA GUARICO</a></h1>
+        </div>
+
+       <div>
+        <img src="../images/F8j0ABxWwAAHwb9-removebg-preview.png" alt="200" width="100">
+       </div>
+      </div>
+    </div>
+
+    <div class="container-navbar">
+      <nav class="navbar container">
+        <i class="fa-solid fa-bars"></i>
+        <ul class="menu">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/mision">Mision</a></li>
+          <li><a href="/vision">Vision</a></li>
+          <li><a href="/proyecciones">Proyecciones</a></li>
+          <li><a href="/login">Administracion</a></li>
+          <li><a href="/logros">Logros</a></li>
+        </ul>
+
+        
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="contenedor">
+      <a href="/filtrado" class="buton"> Filtrar</a> 
+      
+        <table class="content-table">
+            <thead>
+          <tr>
+            <th>Cedula</th>
+            <th>RIF</th>
+            <th>IVSS</th>
+            <th>Apellido 1</th>
+            <th>Apellido 2</th>
+            <th>Nombre 1</th> 
+            <th>Nombre 2</th>
+            <th>Fecha de nacimiento</th>
+            <th>Edad</th>
+            <th>Tipo de sangre</th>
+            <th>Ingreso al programa</th>
+            <th>Ingreso a SENIFA</th>
+            <th>Cargo</th>
+            <th>Instruccion</th> 
+            <th>Telefono</th>
+            <th>Movil</th>
+            <th>Centro de votacion</th>
+            <th>Direccion de habitacion</th>
+            <th>Nucleo familiar</th>
+            <th>Menores de 18</th>
+            <th>Mayores de 18</th>
+            <th>Adulto mayor</th> 
+            <th>Estatus</th>
+            <th>Municipio</th>
+            <th>Parroquia</th>
+            <th>Simoncito</th>
+            <th>Hembras 0-11 meses</th>
+            <th>Hembras 1 año</th>
+            <th>Hembras 2 año</th>
+            <th>Hembras 3 año</th> 
+            <th>Hembras 4 año</th>
+            <th>Total de hembras</th>
+            <th>Varones 0-11 meses</th>
+            <th>Varones 1 año</th>
+            <th>Varones 2 año</th>
+            <th>Varones 3 año</th> 
+            <th>Varones 4 año</th>
+            <th>Total de varones</th>
+            <th>Matricula total</th>
+            <th>Beneficiado CNAE</th>
+            <th>Conucos</th>
+            <th>Base de Misiones</th>
+            <th>Estudia</th>
+            <th>Carrera</th>
+            <th>Correo</th>
+            <th>WhatsApp</th>
+            <th>Telegram</th>
+            <th>Twitter</th>
+            <th>Facebook</th>
+            <th>Cuenta Que Mas Utiliza</th>
+            <th>habilidad Motora</th>
+            <th>Código Del Carnet De La Patria</th>
+            <th>Serial Del Carnet De La Patria</th>
+            <th>Código Del Carnet Del PSUV</th>
+            <th>Serial Del Carnet Del PSUV</th>
+            <th>Alérgico A Algún Medicamento</th>
+            <th>Diagnostico Médico</th>
+            <th>fecha Diagnostico</th>
+            <th>Vocera</th>
+            <th>Cuenta Bancaria</th>
+          </tr>
+        </thead> 
+        <tbody>
+            <tr>
+                <% principal.forEach(principal => { %>
+                    <tr>
+                      
+                      <td><%= principal.cedula %></td> 
+                      <td><%= principal.rif %></a></td>
+                      <td><%= principal.IVSS %></td>
+                      <td><%= principal.apellido1 %></td>
+                      <td><%= principal.apellido2 %></td>
+                      <td><%= principal.nombre1 %></td>
+                    <% }); %></td>
+              </tr>
+        </tbody>
+        </table>
+  </main>
+
+ 
+
+  <footer class="footer">
+    <div class="container container-footer">
+      <div class="menu-footer">
+        <div class="contact-info">
+          <p class="title-footer">Información de Contacto</p>
+          <ul>
+            <li>
+              Dirección: Plaza Bolivar al lado del auditorio del "Brazil"
+            </li>
+            <li>Teléfono 1: 0414-2204369</li>
+            <li>Teléfono 2: 0412-1134738</li>
+            <li>EmaiL: senifa@gmail.com</li>
+          </ul>
+          <div class="social-icons">
+            <span class="facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </span>
+            <span class="twitter">
+              <i class="fa-brands fa-twitter"></i>
+            </span>
+            <span class="youtube">
+              <i class="fa-brands fa-youtube"></i>
+            </span>
+            <span class="pinterest">
+              <i class="fa-brands fa-pinterest-p"></i>
+            </span>
+            <span class="instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="information">
+          <p class="title-footer">Información</p>
+          <ul>
+            <li><a href="#">Acerca de Nosotros</a></li>
+            <li><a href="#">Información Adicional</a></li>
+            <li><a href="#">Politicas de Privacidad</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Contactános</a></li>
+          </ul>
+        </div>
+
+        
+
+        <div class="newsletter">
+          <p class="title-footer"></p>
+
+          <div class="content">
+            <p>
+             
+            </p>
+            
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          Desarrollado por Prestadores de Servicio Comunitario de la UNERG &copy; 2024
+        </p>
+
+       
+      </div>
+    </div>
+  </footer>
+
+  <script
+    src="https://kit.fontawesome.com/81581fb069.js"
+    crossorigin="anonymous"
+  ></script>
 </body>
 </html>
