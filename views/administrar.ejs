@@ -19,7 +19,6 @@
         </div>
 
         <div class="container-logo">
-          
           <h1 class="logo"><a href="/">SENIFA GUARICO</a></h1>
         </div>
 
@@ -28,7 +27,6 @@
        </div>
       </div>
     </div>
-
     <div class="container-navbar">
       <nav class="navbar container">
         <i class="fa-solid fa-bars"></i>
@@ -41,58 +39,29 @@
           <li><a href="/logros">Logros</a></li>
           <li><a href="/blog">Blog</a></li>
         </ul>
-
-        
       </nav>
     </div>
   </header>
 
-  <main>
-    <div class="contenedor">
-      <a href="/filtrado" class="buton"> Filtrar</a> 
+ 
+
+  <section class="banner_m">
+   
       
-        <table class="content-table">
-            <thead>
-          <tr>
-            <th>Cedula</th>
-            <th>RIF</th>
+        <div class="botones">
+                
+            <a href="/Tabla"><button class="fill"> Nomina  </button></a>
+            <a href="/matricula"><button class="fill">  Matricula  </button></a>
+            <a href="/simoncitos"><button class="fill">  Simoncitos  </button></a>
+
+           <a href="/municipios"><button class="fill">  municipios  </button></a>
+          </div>
+       
            
-            <th>Apellido 1</th>
-            <th>Apellido 2</th>
-            <th>Nombre 1</th> 
-            <th>Nombre 2</th>
-            <th>Fecha de nacimiento</th>
-            <th>Edad</th>
-           
-            <th>Cargo</th>
-            
-            <th>Telefono</th>
-            
-            <th>Municipio</th>
-            
-            <th>Simoncito</th>
-            
-            <th>Correo</th>
-        
-            <th>Cuenta Bancaria</th>
-          </tr>
-        </thead> 
-        <tbody>
-            <tr>
-                <% principal.forEach(principal => { %>
-                    <tr>
-                      
-                      <td><%= principal.cedula %></td> 
-                      <td><%= principal.rif %></a></td>
-                      <td><%= principal.IVSS %></td>
-                      <td><%= principal.apellido1 %></td>
-                      <td><%= principal.apellido2 %></td>
-                      <td><%= principal.nombre1 %></td>
-                    <% }); %></td>
-              </tr>
-        </tbody>
-        </table>
-  </main>
+       
+   
+  </section>
+ 
 
  
 

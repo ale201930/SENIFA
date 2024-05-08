@@ -18,6 +18,40 @@ html {
 }
 
 /* ********************************** */
+/*             administrar            */
+/* ********************************** */
+
+.botones {
+    width: max-content;
+    padding: 250px;
+    background-color: transparent;
+    margin: 0px auto;
+    
+   
+}
+
+button {
+  color: #000000;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+button:hover, button:focus {
+  border-color: var(--hover);
+  color:  #ffffff;
+}
+
+button {
+  background: #00abee;
+  border-radius: 15%;
+  border: 5px solid;
+  font: inherit;
+font-size: larger;
+  line-height: 3;
+  margin: 2em;
+  padding: 2em 4em;
+}
+
+/* ********************************** */
 /*             TABLA                  */
 /* ********************************** */
 

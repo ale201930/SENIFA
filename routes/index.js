@@ -37,23 +37,59 @@ console.log(req.body)
 if (req.body.user === "user" && req.body.pass === "admin") {
   console.log("Iniciaste")
   logged = true
-  res.redirect('/tabla');    
+  res.redirect('/administrar');    
 } else {
   logged = false
-  res.redirect('/login')
+  res.redirect('/administrar')
 }
 });
 
-// tabla
+// administrar
+router.get('/administrar', function(req, res, next) {
+  res.render('administrar');
+});
 
+// tabla
 router.get('/tabla', (req, res)=>{
   db.getprincipal()
   .then(data => {        
-
     res.render('tabla', { principal: data });
 })
 .catch(err => {
     res.render('tabla', { principal: [] });
+})
+})
+
+// matricula
+router.get('/matricula', (req, res)=>{
+  db.getprincipal()
+  .then(data => {        
+    res.render('matricula', { principal: data });
+})
+.catch(err => {
+    res.render('matricula', { principal: [] });
+})
+})
+
+// simoncitos
+router.get('/simoncitos', (req, res)=>{
+  db.getprincipal()
+  .then(data => {        
+    res.render('simoncitos', { principal: data });
+})
+.catch(err => {
+    res.render('simoncitos', { principal: [] });
+})
+})
+
+// municipios
+router.get('/municipios', (req, res)=>{
+  db.getprincipal()
+  .then(data => {        
+    res.render('municipios', { principal: data });
+})
+.catch(err => {
+    res.render('municipios', { principal: [] });
 })
 })
 
