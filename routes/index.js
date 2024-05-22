@@ -73,14 +73,36 @@ router.get('/matricula', (req, res)=>{
 
 // simoncitos
 router.get('/simoncitos', (req, res)=>{
-  db.getprincipal()
+  db.getsimoncitos()
   .then(data => {        
-    res.render('simoncitos', { principal: data });
+    res.render('simoncitos', { simoncito: data });
 })
 .catch(err => {
-    res.render('simoncitos', { principal: [] });
+    res.render('simoncitos', { simoncito: [] });
 })
 })
+
+// ingresar
+
+
+router.get('/ingresar', (req, res) => {
+  res.render('ingresar')
+} )
+
+router.post('/ingresar', (req,res) =>{
+console.log(req.body)
+const {simoncito, codigo, nombre, direccion, referencia, escuela, DEA, director, telefono, correo} = req.body;
+console.log(simoncito, codigo, nombre, direccion, referencia, escuela, DEA, director, telefono, correo);
+db. insertsimoncito(simoncito, codigo, nombre, direccion, referencia, escuela, DEA, director, telefono, correo)
+  .then(() => {
+     res.redirect('simoncitos')
+  })
+  .catch(err => {
+    console.log(err);
+  })
+});
+
+
 
 // municipios
 router.get('/municipios', (req, res)=>{
@@ -92,5 +114,11 @@ router.get('/municipios', (req, res)=>{
     res.render('municipios', { principal: [] });
 })
 })
+
+
+// blog
+router.get('/blog', function(req, res, next) {
+  res.render('blog');
+});
 
 module.exports = router;

@@ -48,47 +48,57 @@
   </header>
 
   <main>
-    <div class="contenedor">
-      <a href="/ingresar" class="buton"> Ingresar</a> 
-      <a href="/filtrado" class="buton"> Filtrar</a> 
-      
-        <table class="content-table">
-            <thead>
-          <tr>
-           
-            <th>Simoncito</th>
-            <th>Codigo</th>
-            <th>Nombre</th>
-            <th>Direccion</th>
-            <th>Referencia</th>
-            <th>Escuela</th>
-            <th>DEA</th> 
-            <th>Director</th>
-            <th>Telefono</th>
-            <th>Correo</th>
-          </tr>
-        </thead> 
-        <tbody>
-          <tr>
-            <% simoncito.forEach(simoncitos => { %>
-                <tr>
-                  
-                  <td><%= simoncitos.simoncito %></td> 
-                  <td><%= simoncitos.codigo %></td>
-                  <td><%= simoncitos.nombre %></td>
-                  <td><%= simoncitos.direccion %></td>
-                  <td><%= simoncitos.referencia %></td>
-                  <td><%= simoncitos.escuela %></td>
-                  <td><%= simoncitos.DEA %></td>
-                  <td><%= simoncitos.director %></td>
-                  <td><%= simoncitos.telefono %></td>
-                  <td><%= simoncitos.correo %></td>
-                <% }); %></td>
-          </tr>
-        </tbody>
-        </table>
+    <div class="container_login">
+      <form action="/ingresar" method="post">
+          <h1 class="contariner">Inicio de Sesión</h1>
+          <div class="form-group">
+              <label for="simoncito">Simoncito</label>
+              <input type="text" id="simoncito" name="simoncito" required>
+          </div>
+          <div class="form-group">
+              <label for="codigo">Codigo</label>
+              <input type="text" id="codigo" name="codigo" required>
+          </div>
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="direccion">Direccion</label>
+            <input type="text" id="direccion" name="direccion" required>
+          </div>
+          <div class="form-group">
+            <label for="referencia">Referencia</label>
+            <input type="text" id="referencia" name="referencia" required>
+          </div>
+          <div class="form-group">
+            <label for="escuela">Escuela</label>
+            <input type="text" id="escuela" name="escuela" required>
+          </div>
+          <div class="form-group">
+            <label for="DEA">DEA</label>
+            <input type="text" id="DEA" name="DEA" required>
+          </div>
+          <div class="form-group">
+            <label for="director">Director</label>
+            <input type="text" id="director" name="director" required>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Télefono</label>
+            <input type="number" id="telefono" name="telefono" required>
+          </div>
+          <div class="form-group">
+            <label for="correo">Correo</label>
+            <input type="correo" id="correo" name="correo" required>
+          </div>
+          <div class="form-group">
+              <button type="submit" href="/simoncitos">Iniciar</button>
+          </div>
+      </form>
+  </div>
   </main>
-
+      
+    
  
 
   <footer class="footer">
